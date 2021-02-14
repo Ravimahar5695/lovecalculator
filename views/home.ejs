@@ -1,0 +1,27 @@
+<%- include("header") -%>
+<header id="header">
+    <h1 id="main-heading">Love Calculator</h1>
+    <p id="main-para">Calculate your love with your friends and relatives & try your luck. Do not take it serius its only for fun.</p>
+    <form onsubmit="return calculateLove()" method="POST" action="/">
+        <div class="input-field">
+            <input type="text" class="form-control" id="yourName" name="yourName" placeholder="Your Name">
+            <p id="err1" class="err"></p>
+        </div>
+        <h4 style="font-size: 4rem;"><i class="fas fa-heart"></i></h4>
+        <div class="input-field">
+            <input type="text" class="form-control" id="friendName" name="friendName" placeholder="Friend Name">
+            <p id="err2" class="err"></p>
+        </div>
+        <button type="submit" class="btn submit-btn">Calculate Love</button>
+    </form>
+    <button class="rounded-circle scrollWin" onclick="scrollWin()"><i class="fas fa-arrow-circle-down"></i></button>
+</header>
+
+
+<section id="middle">
+    <p class="result-name"><spain class="text-capitalize"><%=yourName%></spain><spain style="color: #ff5e78;"><i class="fas fa-heart"></i></spain><spain class="text-capitalize"><%=friendName%></spain></p>
+    <h1 class="result"><%=result%></h1>
+</section>
+
+
+<%- include("footer") -%>

@@ -1,0 +1,91 @@
+#header{
+    height: 650px;
+    width: 100%;
+    text-align: center;
+    background-color: #ff5e78;
+    color: #fff;
+    padding: 80px 0;
+    font-weight: bold;
+}
+
+form{
+    margin: 2% 0;
+}
+
+.input-field{
+    width: 25%;
+    margin: auto;
+}
+
+.submit-btn{
+    width: 25%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.submit-btn:hover{
+    background-color: #fff;
+    color: #ff5e78;
+}
+
+.submit-btn:focus, input[type="text"]:focus{
+    box-shadow: none;
+}
+
+input[type="text"]{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.err{
+    margin-top: 10px;
+}
+
+#middle{
+    padding: 5%;
+    text-align: center;
+    height: 400px;
+}
+
+.result-name{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.result-name spain{
+    padding: 10px;
+}
+
+.result{
+    font-size: 5rem;
+}
+
+.scrollWin{
+    background-color: #ff5e78;
+    color: #fff;
+    border: none;
+}
+
+.fa-arrow-circle-down{
+    font-size: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .input-field{
+        width: 60%;
+    }
+
+    .submit-btn{
+        width: 60%;
+    }
+
+    .result-name{
+        font-size: 2rem;
+    }
+}
